@@ -65,8 +65,12 @@ header.navbar {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .nav-links {
@@ -107,34 +111,36 @@ header.navbar {
 }
 
 .hero {
-  padding: 120px 0 80px;
+  padding: 140px 0 100px;
   background: linear-gradient(
-    180deg,
-    rgba(255, 250, 244, 0.95),
-    rgba(245, 242, 239, 1)
-  );
+      180deg,
+      rgba(37, 33, 28, 0.45),
+      rgba(37, 33, 28, 0.85)
+    ),
+    url("Images/spacejoy-9M66C_w_ToM-unsplash.jpg") center/cover no-repeat;
+  color: #fff;
 }
 
 .hero-content {
-  max-width: 760px;
+  max-width: 720px;
 }
 
-.hero-title {
+.hero h1 {
   font-family: "Georgia", "Times New Roman", serif;
-  font-size: clamp(3rem, 5vw, 4.8rem);
-  font-weight: 800;
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  font-weight: 900;
+  line-height: 1.03;
   letter-spacing: -0.05em;
-  margin: 0 0 1rem;
-  color: var(--text);
+  margin: 0 0 1.25rem;
+  text-transform: capitalize;
 }
 
-.hero-text {
-  font-size: 1.1rem;
+.hero p {
+  font-size: 1.15rem;
   max-width: 640px;
-  color: var(--muted);
-  line-height: 1.9;
-  margin: 0;
-}
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.85;
+  margin: 0 0 2rem;
 
 @media (max-width: 768px) {
   .nav-container {
