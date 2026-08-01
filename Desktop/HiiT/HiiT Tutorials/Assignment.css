@@ -1,5 +1,3 @@
-/* Assignment.css - starter styles for Beautiful Spaces */
-
 :root {
   --bg: #f5f2ef;
   --text: #2c2a28;
@@ -111,14 +109,24 @@ header.navbar {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   padding: 140px 0 100px;
   background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.18) 0%,
+      rgba(255, 255, 255, 0.08) 35%,
+      rgba(255, 255, 255, 0) 100%
+    ),
     linear-gradient(180deg, rgba(37, 33, 28, 0.45), rgba(37, 33, 28, 0.85)),
     url("Images/spacejoy-9M66C_w_ToM-unsplash.jpg") center/cover no-repeat;
   color: #fff;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 720px;
 }
 
